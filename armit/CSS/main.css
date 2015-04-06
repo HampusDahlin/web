@@ -108,3 +108,8 @@ body {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+
+.languageOption a:link, .languageOption a:visited, .languageOption a:hover {
+	text-decoration:none;
+	color: #FFFFFF;
+}

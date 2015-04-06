@@ -6,8 +6,16 @@
 		<link rel="icon" type="image/png" href="../public/logo.png" />
 
 		<link rel="stylesheet" href="../CSS/main.css">
-		<!--<script src="../JS/main.js" /> !-->
-
+		<!--<script src="../JS/main.js" />!-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script>
+			function changeLang(toLang){
+				var fromLang = (toLang == "SV") ? "EN" : "SV";
+				var current = document.URL;
+				current = (current.substr(0, current.indexOf(fromLang)) + toLang + current.substr(current.indexOf(fromLang) + 2));
+				location.href = current;
+			}
+		</script>
 	</head>
 	<body>
 		<div id="content">
@@ -50,17 +58,21 @@
 				</div>	
 			</div>
 			<div id="text">
-				ArmIT är IT-sektionens arbetsmarknadsgrupp och arbetar för att bygga en tydlig kontakt mellan IT-studenter och företag ute i arbetslivet. ArmIT ordnar bla. lunchföredrag samt bransch- och mingelkvällar med olika företag som är intressanta för IT-studenterna. Som företag blir man tilldelad en kontaktperson i ArmIT, detta för att på bästa sätt kunna arbeta fram tillsammans hur företaget ska marknadsföra sig mot IT-studenterna.<p />ArmIT samarbetar även med arbetsmarknadsgrupperna på programmen Data och Elektro, med att arrangera årets arbetsmarknadsdag, DATE-IT, som går av stapeln varje höst i november.
+				ArmIT är IT-sektionens arbetsmarknadsgrupp och arbetar för att bygga en tydlig kontakt mellan IT-studenter och företag ute i arbetslivet. ArmIT ordnar bla. lunchföredrag samt bransch- och mingelkvällar med olika företag som är intressanta för IT-studenterna. Som företag blir man tilldelad en kontaktperson i ArmIT, detta för att på bästa sätt kunna arbeta fram tillsammans hur företaget ska marknadsföra sig mot IT-studenterna.<p />ArmIT samarbetar även med arbetsmarknadsgrupperna på programmen Data och Elektro, med att arrangera årets arbetsmarknadsdag, DATE-IT, som går av stapeln varje höst i november
 			</div>
 		</div>
 		<div id="footer">
 			<div class="footerItem">
 				<div id="languageSelect">
 					<div class="languageOption">
-						Svenska
+						<a href="" id="svOp" onclick="changeLang('SV');return false;">
+							Svenska
+						</a>
 					</div>
 					<div class="languageOption">
-						English
+						<a href="" id="enOp" onclick="changeLang('EN');return false;">
+							English
+						</a>
 					</div>
 				</div>
 			</div>
