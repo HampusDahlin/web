@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	background-image: url("tbg.png");
+	background-attachment: fixed;
+	height: auto;
+	color: #EEEEEE;
+}
+
+#content {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#slide1 {
+	height:100vh;
+	opacity: .8;
+	display: flex;
+	flex-grow: 1;
+	flex: auto;
+	flex-direction: column;
+}
+
+#slide2 {
+	height:100vh;
+	opacity: .8;
+	display: flex;
+	flex-grow: 1;
+	flex: auto;
+	flex-direction: column;
+}
+
+#slide3 {
+	height:100vh;
+	opacity: .8;
+	display: flex;
+	flex-grow: 1;
+	flex: auto;
+	flex-direction: column;
+}
+
+.slidecont {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 10;
+}
+
+.leftPanel, .rightPanel {
+	font-size: 2em;
+	text-align: justify;
+	vertical-align: center;
+	padding: 2em;
+	width: 100%;
+	height: 100%;
+	flex-grow: 1;
+}
+
+#navup, #navdown {
+	height: 5%;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 3em;
+	width: 100%;
+	z-index: 99;	
+}
+
+#navup {
+	text-align: center;
+	position: fixed;
+	top: 0%;
+	padding-top: 2px;
+}
+
+#navdown {
+	position: fixed;
+	bottom: 0%;
+	padding-bottom: 0;
+}

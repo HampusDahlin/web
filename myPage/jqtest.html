@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+    			$("a").click(function(){
+    				var addressValue = $(this).attr("href");
+    				$("html, body").animate({
+            			scrollTop: $(addressValue).offset().top
+        			}, 800);
+        			return false;
+			    });
+			});
+		</script>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Hampus Dahlin</title>
+	</head>
+	<body>
+		<div id="content">
+			<div id="slide1">
+				<canvas id="bgCanvas1"></canvas>
+				<div class="slidecont">
+					<div class="leftPanel">
+
+					</div>
+					<div class="rightPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish. I think people are saying "yes, there’s more to Ireland than this". A good slogan for the tourist boardI think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish. I think people are saying "yes, there’s more to Ireland than this".
+					</div>
+				</div>
+				<footer class="navdown">
+					<a href="#slide2" id="to2">move down</a>
+				</footer>
+			</div>
+
+
+			<div id="slide2">
+				<header class="navup">
+					<a href="#slide1">move up</a>
+				</header>
+				<div class="slidecont">
+					<div class="leftPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.
+					</div>
+					<div class="rightPanel">
+					</div>
+				</div>
+				<footer class="navdown">
+					<a href="#slide3">move down</a>
+				</footer>
+			</div>
+			
+
+			<div id="slide3">
+				<header class="navup">
+					<a href="#slide2">move up</a>
+				</header>
+				<div class="slidecont">
+					<div class="leftPanel">
+					</div>
+					<div class="rightPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

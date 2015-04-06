@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#banner {
+	background-image: url(public/cityscape.jpg);
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 100%;
+	color: white;
+	margin-bottom: 0;
+	text-decoration: none;
+	font-family: "Trebuchet MS";
+	text-shadow: black 0.3em 0.3em;
+}
+
+#content {
+	margin-top: 6em;
+	text-align: center;
+}
+
+#text {
+	width: 50%;
+	margin: auto;
+}

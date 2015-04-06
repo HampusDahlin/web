@@ -1,0 +1,109 @@
+	<head>
+		<meta charset="utf-8">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				var pos = 1;
+    			$("a").click(function(){
+    				var addressValue = $(this).attr("href");
+    				if(addressValue == "#up"){
+    					pos = pos == 1 ? 1 : pos-1;
+    					addressValue = "#slide".concat(pos);
+    				}else{
+    					pos = pos == 3 ? 3 : pos+1;
+    					addressValue = "#slide".concat(pos);
+    				}
+    				$("html, body").stop();
+    				$("html, body").animate({
+            			scrollTop: $(addressValue).offset().top
+        			}, 600);
+        			return false;
+			    });
+
+			    $(window).bind('mousewheel', function(event) {
+    				if (event.originalEvent.wheelDelta >= 0) {
+    				    //scroll up
+    				    document.getElementById("linkup").click();
+   					}
+    				else {
+    				    //scroll down
+    				    document.getElementById("linkdown").click();
+    				}
+				});
+
+			    $(document).keydown(function(e) {
+    				switch(e.which) {
+    					case 37: //left
+        				case 38: // up
+        					document.getElementById("linkup").click();
+       					break;
+
+       					case 39: //right
+        				case 40: // down
+        					document.getElementById("linkdown").click();
+        				break;
+
+				        default: return; // exit this handler for other keys
+				    }
+				    e.preventDefault(); // prevent the default action (scroll / move caret)
+				});
+			});
+		</script>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="playground.css">
+		<title>Hampus Dahlin</title>
+	</head>
+	<body>
+		<div id="up"></div>
+		<div id="down"></div>
+		<a href="#up" id="linkup">
+			<header id="navup">
+				<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			</header>
+		</a>
+		<a href="#down" id="linkdown">
+			<footer id="navdown">
+				<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+			</footer>
+		</a>
+
+		<div id="content">
+
+
+			<div id="slide1">
+				<div class="slidecont" id="cont1">
+					<div class="leftPanel">
+					</div>
+					<div class="rightPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish. I think people are saying "yes, there’s more to Ireland than this". A good slogan for the tourist boardI think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish. I think people are saying "yes, there’s more to Ireland than this".
+					</div>
+				</div>
+			</div>
+
+
+			<div id="slide2">
+				<div class="slidecont">
+					<div class="leftPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.
+					</div>
+					<div class="rightPanel">
+					</div>
+				</div>
+			</div>
+			
+
+			<div id="slide3">
+				<div class="slidecont">
+					<div class="leftPanel">
+					</div>
+					<div class="rightPanel">
+						I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives – in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>ArmIT</title>
+		<link rel="icon" type="image/png" href="../public/logo.png" />
+
+		<link rel="stylesheet" href="../CSS/main.css">
+		<!--<script src="../JS/main.js" />!-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script>
+			/*$(document).ready(function(){
+				var current = document.URL;
+				current = (current.substr(0, current.indexOf("EN")) + "SE" + current.substr(current.indexOf("EN") + 2));
+				alert(current);
+ 			});*/
+	
+			var svLink = document.getElementById('svOp');
+			var enLink = document.getElementById('enOp');
+			sv.onclick = changeLang('sv');
+			en.onclick = changeLang('en');
+
+			function changeLang(toLang){
+				alert(toLang);
+			}
+ 			/*$("a.languageOption").click(function(){
+			   alert("yes link clicked");
+			});*/
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="header">
+				<div id="navMenu">
+					<div id="leftNav">
+						<a href="">
+							<div class="imgContainer">
+								<img src="../public/logo.png">
+							</div>
+						</a>
+					</div>
+					<div id="rightNav">
+						<a href="" class="navLink">
+							<div class="navItem">
+								Om ArmIT
+							</div>
+						</a>
+						<a href="" class="navLink">
+							<div class="navItem">
+								Evenemang
+							</div>
+						</a>
+						<a href="" class="navLink">
+							<div class="navItem">
+								För Företag
+							</div>
+						</a>
+						<a href="" class="navLink">
+							<div class="navItem">
+								Våra Samarbeten
+							</div>
+						</a>
+						<a href="" class="navLink">
+							<div class="navItem">
+								Kontakt
+							</div>
+						</a>
+					</div>
+				</div>	
+			</div>
+			<div id="text">
+				ArmIT är IT-sektionens arbetsmarknadsgrupp och arbetar för att bygga en tydlig kontakt mellan IT-studenter och företag ute i arbetslivet. ArmIT ordnar bla. lunchföredrag samt bransch- och mingelkvällar med olika företag som är intressanta för IT-studenterna. Som företag blir man tilldelad en kontaktperson i ArmIT, detta för att på bästa sätt kunna arbeta fram tillsammans hur företaget ska marknadsföra sig mot IT-studenterna.<p />ArmIT samarbetar även med arbetsmarknadsgrupperna på programmen Data och Elektro, med att arrangera årets arbetsmarknadsdag, DATE-IT, som går av stapeln varje höst i november.
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footerItem">
+				<div id="languageSelect">
+					<div class="languageOption">
+						<a href="" id="svOp">
+							Svenska
+						</a>
+					</div>
+					<div class="languageOption">
+						<a href="" id="enOp">
+							English
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footerItem">
+			</div>
+		</div>
+	</body>
+</html>
